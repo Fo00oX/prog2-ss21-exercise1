@@ -55,12 +55,9 @@ public class FuelCalculatorTest {
         int [] masses = {14};
         int expected = 2;
 
-        int fuelForFuelActual = FuelFromMass.calculateFuelForFuel(masses);
-
-
-
+        int actual = FuelFromMass.calculateFuelForFuel(masses);
+        assertEquals(expected, actual);
     }
-
 
 }
 
