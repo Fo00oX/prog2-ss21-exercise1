@@ -52,13 +52,28 @@ public class FuelCalculatorTest {
 
     @Test
     void fuelForFuelCalculation_Scenario_14(){
-        int [] masses = {14};
+        int mass = 14;
         int expected = 2;
 
-        int actual = FuelFromMass.calculateFuelForFuel(masses);
+        int actual = FuelFromMass.calculateFuelForFuel(mass, 0);
         assertEquals(expected, actual);
     }
+    @Test
+    void fuelForFuelCalculation_Scenario_1969(){
+        int mass = 1969;
+        int expected = 966;
 
+        int actual = FuelFromMass.calculateFuelForFuel(mass, 0);
+        assertEquals(expected, actual);
+    }
+    @Test
+    void fuelForFuelCalculation_Scenario_33583(){
+        int mass = 100756;
+        int expected = 50346;
+
+        int actual = FuelFromMass.calculateFuelForFuel(mass, 0);
+        assertEquals(expected, actual);
+    }
 }
 
 
