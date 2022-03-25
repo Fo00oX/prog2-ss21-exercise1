@@ -15,7 +15,7 @@ public class FuelCalculatorTest {
         int[] masses = {12};
         int expected = 2;
 
-        int fuelFromMassCalculator = FuelFromMass.fuelFromMassCalculator(masses);
+        int fuelFromMassCalculator = FuelFromMass.calculateFuelForMasses(masses);
         assertEquals(expected, fuelFromMassCalculator);
     }
     @Test
@@ -23,7 +23,7 @@ public class FuelCalculatorTest {
         int[] masses = {14};
         int expected = 2;
 
-        int fuelFromMassCalculator = FuelFromMass.fuelFromMassCalculator(masses);
+        int fuelFromMassCalculator = FuelFromMass.calculateFuelForMasses(masses);
         assertEquals(expected, fuelFromMassCalculator);
     }
     @Test
@@ -31,7 +31,7 @@ public class FuelCalculatorTest {
         int[] masses = {1969};
         int expected = 654;
 
-        int fuelFromMassCalculator = FuelFromMass.fuelFromMassCalculator(masses);
+        int fuelFromMassCalculator = FuelFromMass.calculateFuelForMasses(masses);
         assertEquals(expected, fuelFromMassCalculator);
     }
     @Test
@@ -39,7 +39,7 @@ public class FuelCalculatorTest {
         int[] masses = {100756};
         int expected = 33583;
 
-        int fuelFromMassCalculator = FuelFromMass.fuelFromMassCalculator(masses);
+        int fuelFromMassCalculator = FuelFromMass.calculateFuelForMasses(masses);
         assertEquals(expected, fuelFromMassCalculator);
     }
     /**
@@ -49,6 +49,17 @@ public class FuelCalculatorTest {
      So, the total fuel required for a module of mass 1969 is 654 + 216 + 70 + 21 + 5 = 966.
      - The fuel required by a module of mass 100756 and its fuel is: 33583 + 11192 + 3728 + 1240 + 411 + 135 + 43 + 12 + 2 = 50346.
      **/
+
+    @Test
+    void fuelForFuelCalculation_Scenario_14(){
+        int [] masses = {14};
+        int expected = 2;
+
+        int fuelForFuelActual = FuelFromMass.calculateFuelForFuel(masses);
+
+
+
+    }
 
 
 }

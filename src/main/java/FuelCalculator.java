@@ -1,5 +1,5 @@
 class FuelFromMass {
-    public static int fuelFromMassCalculator(int[] masses){
+    public static int calculateFuelForMasses(int[] masses){
         int sum = 0;
         for (int i = 0; i < masses.length; i++) {
             sum += (masses[i] / 3) - 2;
@@ -7,13 +7,7 @@ class FuelFromMass {
         return sum;
     }
 
-   public static int wrappedFuelFromMassCalculator(int[] masses) {
-        int totalSum = 0;
-        int sum = 0;
-        for (int i = 0; i < masses.length; i++) {
-            sum += (masses[i] / 3) - 2;
-            totalSum += sum;
-        }
-        return totalSum;
+    public static int calculateFuelForFuel(int[] masses) {
+        return 0;
     }
 }
