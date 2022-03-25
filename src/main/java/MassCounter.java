@@ -1,4 +1,4 @@
-public class NumberOfMasses {
+public class MassCounter {
     public static int countNumberOfMasses(int[] masses) {
         int count = 0;
 
@@ -8,4 +8,5 @@ public class NumberOfMasses {
         }
         return count;
     }
+
 }
