@@ -20,5 +20,4 @@ class FuelFromMassTest {
         //Assert
         assertEquals(100,count);
     }
-
 }

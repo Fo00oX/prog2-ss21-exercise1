@@ -5,12 +5,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FuelCalculatorTest {
 
     @Test
-    void fuelForModulCalculation() {
+    void fuelForModuleCalculation() {
         //Act
-        int [] mass = {12, 14};
+        int [] masses = {12, 14};
 
         //Assert
-        int fuelFromMassCalculator = FuelFromMass.fuelFromMassCalculator(mass);
+        int fuelFromMassCalculator = FuelFromMass.fuelFromMassCalculator(masses);
         assertEquals(4,fuelFromMassCalculator);
     }
 }
